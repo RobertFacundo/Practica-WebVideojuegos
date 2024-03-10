@@ -10,7 +10,10 @@
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  box-shadow: 0 8px 7px #ba0f0fa0; }
+  box-shadow: 0 8px 7px #ba0f0fa0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   .nav ul {
     display: flex;
     flex-direction: row;
@@ -103,11 +106,12 @@
     position: relative; }
     .nav .box .input {
       padding: 10px;
+      margin-right: 10px;
       width: 80px;
       height: 65px;
       background: none;
       border: 3px solid #BD1E1E;
-      border-radius: 55px;
+      border-radius: 57px;
       box-sizing: border-box;
       font-family: "Anta", sans-serif;
       font-size: 26px;
@@ -119,6 +123,7 @@
         border-radius: 10px; }
     .nav .box i {
       position: absolute;
+      margin-right: 10px;
       top: 50%;
       right: 15px;
       transform: translate(-50%, -50%);
@@ -128,3 +133,30 @@
       .nav .box i:hover {
         opacity: 0;
         color: #bd1e1e7a; }
+
+@media (max-width: 1133px) {
+  .nav {
+    height: 150px; }
+    .nav ul li .top {
+      font-size: 30px;
+      color: #0e0505c3; }
+      .nav ul li .top:hover {
+        color: #0e0505ea; }
+    .nav .plataformas {
+      flex-direction: column; }
+      .nav .plataformas .consolas {
+        font-size: 20px;
+        color: #0e0505c3; }
+        .nav .plataformas .consolas:hover {
+          color: #0e0505ea; }
+    .nav .box .input {
+      border: 3px solid #0e050568;
+      color: #00000092; }
+      .nav .box .input:hover {
+        width: 250px; } }
+
+@media (max-width: 627px) {
+  .nav {
+    height: 150px; }
+    .nav ul li .top {
+      font-size: 18px; } }
