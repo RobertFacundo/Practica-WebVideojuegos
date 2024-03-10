@@ -102,6 +102,10 @@
           width: 100%; }
         .nav .plataformas .w3-dropdown-content .w3-bar-item:hover {
           background-color: #cf2121 !important; }
+  .nav .titulo-res {
+    font-family: "Anta", sans-serif;
+    display: none;
+    color: #060000aa; }
   .nav .box {
     position: relative; }
     .nav .box .input {
@@ -134,29 +138,66 @@
         opacity: 0;
         color: #bd1e1e7a; }
 
-@media (max-width: 1133px) {
-  .nav {
-    height: 150px; }
-    .nav ul li .top {
-      font-size: 30px;
-      color: #0e0505c3; }
-      .nav ul li .top:hover {
-        color: #0e0505ea; }
-    .nav .plataformas {
-      flex-direction: column; }
-      .nav .plataformas .consolas {
-        font-size: 20px;
-        color: #0e0505c3; }
-        .nav .plataformas .consolas:hover {
-          color: #0e0505ea; }
+@media screen and (max-width: 1149px) {
+  .nav .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 27vh;
+    background-color: rgba(0, 0, 0, 0.288);
+    margin-top: 76px;
+    opacity: 0.7; }
+    .nav .menu a {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      margin: 5px 25px; }
+  .nav .plataformas .consolas::after {
+    left: 0%; }
+  .nav .plataformas .consolas:hover::after {
+    width: 180%; }
+  .nav .plataformas .w3-dropdown-hover {
+    margin-left: 23px;
+    color: white;
+    background-color: #b6b6b6 !important; }
+    .nav .plataformas .w3-dropdown-hover:hover {
+      color: white !important;
+      background-color: #b6b6b6 !important; }
+    .nav .plataformas .w3-dropdown-hover .w3-button {
+      color: white !important;
+      background-color: #b6b6b6 !important; }
+      .nav .plataformas .w3-dropdown-hover .w3-button:hover {
+        color: white !important;
+        background-color: #b6b6b6 !important; }
+    .nav .plataformas .w3-dropdown-hover .w3-dropdown-content {
+      right: 44%;
+      background-color: #b6b6b6;
+      width: 39%;
+      height: 165px;
+      margin-left: 0;
+      opacity: 0.9; }
+      .nav .plataformas .w3-dropdown-hover .w3-dropdown-content .w3-bar-item {
+        width: 90%;
+        margin-left: 5px; }
+  .nav ul li .top {
+    color: rgba(255, 255, 255, 0.749); }
+    .nav ul li .top:hover {
+      color: #120b0bd9; }
+  .nav .titulo-res {
+    display: block;
+    text-align: left;
+    font-size: 23px;
+    margin-left: 5px; }
+  .nav .box {
+    margin-right: 30px; }
     .nav .box .input {
-      border: 3px solid #0e050568;
-      color: #00000092; }
+      height: 39px;
+      font-size: 23px; }
       .nav .box .input:hover {
-        width: 250px; } }
-
-@media (max-width: 627px) {
-  .nav {
-    height: 150px; }
-    .nav ul li .top {
-      font-size: 18px; } }
+        color: #060000;
+        font-family: "Anta", sans-serif; } }
