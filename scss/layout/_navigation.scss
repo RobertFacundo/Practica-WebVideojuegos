@@ -252,13 +252,14 @@
                 .w3-dropdown-content {
                     right: 44%;
                     background-color: rgb(182, 182, 182);
-                    width: 39%;
+                    width: 44%;
                     height: 165px;
                     margin-left: 0;
                     opacity: 0.9;
                     .w3-bar-item{
                           width: 90%;
                           margin-left: 5px;
+                          font-size: 13px;
                     }
                 }
             }
@@ -295,6 +296,19 @@
                     color: #060000;
                     font-family: "Anta", sans-serif;
 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav{
+        .plataformas{
+            .w3-dropdown-hover{
+                .w3-dropdown-content {
+                    height: 200px;
+                    width: 50%;
                 }
             }
         }
