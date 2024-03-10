@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- fa fa search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -23,21 +25,26 @@
                 Nintendo
             </a>
             <a class="consolas" href="">
-                Computer Games
+                PC Games
             </a>
-            <div class="w3-dropdown-hover custom-dropdown">
-                <button class="w3-button consolas">PlayStation</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                  <a href="#" class="w3-bar-item w3-button">Play Station 1</a>
-                  <a href="#" class="w3-bar-item w3-button">Play Station 2</a>
-                  <a href="#" class="w3-bar-item w3-button">Play Station 3</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button consolas custom-dropdown">PlayStation</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 custom-dropdown-content">
+                    <a href="#" class="w3-bar-item w3-button custom-dropdown-item">Play Station 1</a>
+                    <a href="#" class="w3-bar-item w3-button custom-dropdown-item">Play Station 2</a>
+                    <a href="#" class="w3-bar-item w3-button custom-dropdown-item">Play Station 3</a>
                 </div>
-              </div>
+            </div>
             <a class="consolas" href="">
                 XBOX
             </a>
         </div>
-        <input type="text" placeholder="Search..">
+        <div class="box">
+            <form name="search">
+                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="fa fa-search"></i>
+        </div>
     </nav>
 
 </body>
