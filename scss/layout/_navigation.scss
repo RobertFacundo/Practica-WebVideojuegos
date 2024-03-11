@@ -88,56 +88,6 @@
 
             }
         }
-
-        // estilos personalizados del dropdown de w3
-        .w3-dropdown-hover,
-        .w3-dropdown-click {
-            &:hover>.w3-button:first-child {
-                background-color: #BD1E1E;
-            }
-        }
-
-        .w3-button {
-            &:hover {
-                background-color: #BD1E1E !important;
-            }
-        }
-
-        .w3-dropdown-content {
-            margin-top: 1px;
-            background-color: #BD1E1E;
-            font-family: "Anta", sans-serif;
-            font-size: 18px;
-            box-shadow: 0 8px 7px #ba0f0fa0;
-            height: 90px;
-            width: 100%;
-
-            .w3-bar-item {
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: -100%;
-                    width: 100%;
-                    height: 2px;
-                    background: #230606b3;
-                    transition: left .8s;
-                }
-
-                &:hover::after {
-                    left: 0;
-                    width: 100%;
-                }
-
-                &:hover {
-                    background-color: #cf2121 !important;
-                }
-            }
-        }
     }
 
     .titulo-res {
@@ -199,7 +149,7 @@
             top: 0;
             left: 0;
             min-width: 30%;
-            height: 23vh;
+            height: 29vh;
             background-color: rgba(0, 0, 0, 0.288);
             margin-top: 76px;
             opacity: 0.7;
@@ -226,42 +176,6 @@
                 &:hover::after {
                     width: 180%;
 
-                }
-            }
-
-            .w3-dropdown-hover {
-                margin-left: 23px;
-                color: white;
-                // background-color: rgba(0, 0, 0, 0.288) !important;
-                opacity: 0.7 !important;
-
-                &:hover {
-                    color: white !important;
-                    background-color: rgb(182, 182, 182) !important;
-                }
-
-                .w3-button {
-                    color: white !important;
-                    background-color: rgb(182, 182, 182) !important;
-
-                    &:hover {
-                        color: white !important;
-                        background-color: rgb(182, 182, 182) !important;
-                    }
-                }
-
-                .w3-dropdown-content {
-                    right: 0;
-                    background-color: rgb(182, 182, 182);
-                    width: 44%;
-                    height: 165px;
-                    margin-left: 0;
-                    opacity: 1;
-                    .w3-bar-item{
-                          width: 90%;
-                          margin-left: 5px;
-                          font-size: 13px;
-                    }
                 }
             }
         }

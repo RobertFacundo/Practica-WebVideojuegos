@@ -1,15 +1,23 @@
 .loop-slide {
     display: flex;
     overflow: hidden;
+    margin-bottom: 0;
+    h1{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
 
     .img-slide {
         display: flex;
         flex-direction: row;
-        animation: slide-to-left 139s linear infinite;
+        animation: slide-to-left 79s linear infinite;
         height: 100vh;
         width: 100vw;
         margin-top: 75px;
-        z-index: -1;
+        z-index: -1; //para que la imagen se acurruque debajo del nav
     }
 }
 
@@ -18,6 +26,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-600%));
+        transform: translateX(calc(-570%));
     }
 }
