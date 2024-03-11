@@ -1,0 +1,23 @@
+.loop-slide {
+    display: flex;
+    overflow: hidden;
+
+    .img-slide {
+        display: flex;
+        flex-direction: row;
+        animation: slide-to-left 139s linear infinite;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 75px;
+        z-index: -1;
+    }
+}
+
+@keyframes slide-to-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-600%));
+    }
+}
