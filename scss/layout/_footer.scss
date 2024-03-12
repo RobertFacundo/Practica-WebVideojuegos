@@ -1,0 +1,21 @@
+.footer{
+    background-image: linear-gradient(to left, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+    height: 45px;
+    box-shadow: 0 -8px 7px #0600008d;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    .p-footer{
+        font-family: "Anta", sans-serif;
+        font-size: 13px;
+        margin: 0;
+        top: -50%;
+        a{
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
