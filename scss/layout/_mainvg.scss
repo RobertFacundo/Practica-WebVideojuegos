@@ -1,0 +1,53 @@
+.vg-main {
+    background-image: linear-gradient(39deg, #060000, #6b1f1ff3, #b21111f3, #060000f4);
+    margin: 0;
+    box-shadow: 0 -8px 7px #ba0f0fa0;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-around;
+
+    .vg-cover {
+        width: 500px;
+        margin: 15px 0px;
+        box-shadow: 0px 0px 13px 9px rgba(6, 0, 0, 0.55);
+    }
+
+    .vg-description {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-around;
+
+        .vg-titulo {
+            font-family: "Anta", sans-serif;
+            font-size: 49px;
+            text-align: center;
+            margin-top: 20px;
+            transition: all 0.1s ease-in-out;
+            padding: 8px;
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .vg-p {
+            font-family: 'M PLUS Rounded 1c';
+            font-size: 30px;
+            transition: all 0.3 ease-in-out;
+        }
+        a{
+            font-family:"Anta", sans-serif;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3 ease-in-out;
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+}
