@@ -49,7 +49,7 @@
                 margin-left: 30px;
 
                 &:hover {
-                    color: #d10f0f;
+                    color: $white;
                 }
             }
         }
@@ -85,7 +85,9 @@
 
             &:hover::after {
                 width: 100%;
-
+            }
+            &:hover{
+                color: $white
             }
         }
     }
@@ -110,7 +112,7 @@
             box-sizing: border-box;
             font-family: "Anta", sans-serif;
             font-size: 26px;
-            color: #ba0f0fd5;
+            color: $white;
             outline: none;
             transition: .5s;
 

@@ -1,9 +1,13 @@
 @import './base/reset';
 @import './base/typo';
 
+@import './utilities/variables';
+
 @import './layout/navigation';
 @import './layout/header';
 @import './layout/main';
 @import './layout/mainvg';
+@import './layout/mainguide';
 @import './layout/grid';
 @import './layout/footer';
+
