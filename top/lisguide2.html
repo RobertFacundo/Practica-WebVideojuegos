@@ -11,7 +11,7 @@
     <!-- fa fa search -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- script para el slider -->
-    <script src="./js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -40,6 +40,10 @@
                 <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
             </form>
             <i class="fa fa-search"></i>
+            <div id="searchResults" class="dropdown" style="display: none;">
+                <div class="dropdown-item" id="LifeIsstrange">Life is strange</div>
+                <div class="dropdown-item" data-url="./juegos/age_of_empires_ii.html">Age of Empires II</div>
+            </div>
         </div>
     </nav>
     <main class="vg-guia">

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilo de w23 para el dropdown del nav -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- fa fa search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- script para el slider -->
+    <script src="../js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- barra de navegacion -->
+    <nav class="nav" id="nav">
+        <ul>
+            <li>
+                <a class="top" href="../index.html">Más Buscados </a>
+            </li>
+        </ul>
+        <div class="plataformas menu">
+            <a class="consolas" href="">
+                PC Games
+            </a>
+            <a class="consolas" href="">
+                PS
+            </a>
+            <a class="consolas" href="">
+                PS II
+            </a>
+        </div>
+        <h1 class="titulo-res">GAME CENTER</h1>
+        <div class="box">
+            <form name="search">
+                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="fa fa-search"></i>
+            <div id="searchResults" class="dropdown" style="display: none;">
+                <div class="dropdown-item" id="LifeIsstrange">Life is strange</div>
+                <div class="dropdown-item" data-url="./juegos/age_of_empires_ii.html">Age of Empires II</div>
+            </div>
+        </div>
+    </nav>
+    <header class="loop-slide">
+        <div class="img-slide">
+            <img src="../multimedia/Games/ResidentEvil4/2.jpg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/1.png" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/3.jpg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/4.jpg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/5.jpg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/7.jpg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/8.avif" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/9.jpeg" alt="screenshot del videjuego life is strange">
+            <img src="../multimedia/Games/ResidentEvil4/10.png" alt="">
+            <img src="../multimedia/Games/ResidentEvil4/11.jpg" alt="">
+        </div>
+    </header>
+    <main class="vg-main">
+        <img class="vg-cover" src="../multimedia/Top/Resident-Evil-4.jpg"
+            alt="tapa del videojuego life is strange">
+        <div class="vg-description">
+            <h1 class="vg-titulo"> <a href="../index.html">&larr;</a>Resident Evil 4 (2005)</h1>
+            <p class="vg-p"><strong>Resident Evil 4</strong> Es un juego de terror de supervivencia desarrollado por
+                <strong>Capcom</strong>, lanzado originalmente para el GameCube en 2005. Los jugadores controlan al agente especial Leon
+                S. Kennedy en una misión para rescatar a la hija del presidente de los Estados Unidos, Ashley Graham,
+                quien ha sido secuestrada por un culto religioso en la España rural. Leon lucha contra hordas de
+                enemigos infectados por un parásito que controla la mente.
+            </p>
+            <p class="enlaces">
+                <a href="../index.html">Inicio</a><a href="./ResidentEvilGuide.html">Guia</a>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="p-footer">&copy; Todos los derechos reservados 2024 | Desarrollado por <a
+                href="https://www.linkedin.com/in/robertfacundofrontend/" target="_blank">Robert</a>
+        </p>
+    </footer>
+</body>
+
+</html>

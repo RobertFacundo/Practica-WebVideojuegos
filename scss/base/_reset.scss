@@ -1,4 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+
+    &::-webkit-scrollbar {
+        width: 13px;
+        /* Ancho de la barra de desplazamiento */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-image: linear-gradient(39deg, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+        /* Color de fondo de la pista */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ff0000;
+        /* Color del mango de la barra de desplazamiento */
+        border-radius: 8px;
+    }
 }

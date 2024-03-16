@@ -86,7 +86,8 @@
             &:hover::after {
                 width: 100%;
             }
-            &:hover{
+
+            &:hover {
                 color: $white
             }
         }
@@ -95,7 +96,7 @@
     .titulo-res {
         font-family: "Anta", sans-serif;
         display: none;
-        color: #060000aa
+        color: #060000aa;
     }
 
     .box {
@@ -104,7 +105,7 @@
         .input {
             padding: 10px;
             margin-right: 10px;
-            width: 80px;
+            width: 310px;
             height: 65px;
             background: none;
             border: 3px solid #BD1E1E;
@@ -117,7 +118,6 @@
             transition: .5s;
 
             &:hover {
-                width: 300px;
                 border-radius: 10px;
             }
         }
@@ -135,6 +135,53 @@
             &:hover {
                 opacity: 0;
                 color: #bd1e1e7a;
+            }
+        }
+
+        .dropdown {
+            display: flex;
+            flex-direction: row;
+            font-family: $fuente-titulo;
+            font-size: 16px;
+            position: absolute;
+            background-image: linear-gradient(39deg, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+            border: 1px solid #060000aa;
+            color: #060000aa;
+            border-radius: 5px;
+            box-shadow: 2px 6px 8px 12px rgba(18, 17, 17, 0.1);
+            min-height: 100px;
+            max-height: 300px;
+            width: 310px;
+            overflow-y: auto;
+            z-index: 1000;
+
+            &::-webkit-scrollbar {
+                width: 5px; /* Ancho de la barra de desplazamiento */
+            }
+        
+            &::-webkit-scrollbar-track {
+                background-color: #060000e9; /* Color de fondo de la pista */
+                border-radius: 8px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: #920000; /* Color del mango de la barra de desplazamiento */
+                border-radius: 13px; /* Radio de borde del mango */
+                height: 13px;
+            }
+
+            &-item {
+                padding: 8px 12px;
+                cursor: pointer;
+                color: #060000aa;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: $white;
+                    border-top: #060000 0.6px solid;
+                    border-bottom: #060000 0.6px solid;
+                }
             }
         }
     }
@@ -220,9 +267,9 @@
 }
 
 @media screen and (max-width: 500px) {
-    .nav{
-        .plataformas{
-            .w3-dropdown-hover{
+    .nav {
+        .plataformas {
+            .w3-dropdown-hover {
                 .w3-dropdown-content {
                     height: 179px;
                     width: 42%;
