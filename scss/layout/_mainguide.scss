@@ -9,10 +9,10 @@
             font-size: 39px;
             text-decoration: none;
             padding: 13px;
-            color: #060000;
+            color: $white;
 
             &:hover {
-                color: $white;
+                color: #b21111f3;
             }
         }
 
@@ -47,7 +47,19 @@
             margin: 5px;
             width: 29vw;
             margin-right: 20px;
-            box-shadow: 0px 0px 13px 9px rgba(6, 0, 0, 0.55);
+            box-shadow: 0px 0px 9px 7px rgba(6, 0, 0, 0.55);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .img-guia2 {
+            margin: 5px;
+            width: 29vw;
+            margin-right: 20px;
+            box-shadow: 0px 0px 13px 9px $white;
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -58,6 +70,15 @@
         .img {
             width: 43vw;
             box-shadow: 0px 0px 13px 9px rgba(6, 0, 0, 0.55);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+        .img2 {
+            width: 43vw;
+            box-shadow: 0px 0px 13px 9px $white;
             transition: all 0.3s ease-in-out;
 
             &:hover {

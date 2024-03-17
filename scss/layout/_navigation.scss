@@ -95,8 +95,13 @@
 
     .titulo-res {
         font-family: "Anta", sans-serif;
-        display: none;
-        color: #060000aa;
+        font-size: 39px;
+        text-shadow: -4px -5px 4px rgba(0, 0, 0, 0.288);
+        color: #060000cb;
+
+        &:hover {
+            color: $white;
+        }
     }
 
     .box {
@@ -105,6 +110,7 @@
         .input {
             padding: 10px;
             margin-right: 10px;
+            padding-left: 18px;
             width: 310px;
             height: 65px;
             background: none;
@@ -112,7 +118,7 @@
             border-radius: 57px;
             box-sizing: border-box;
             font-family: "Anta", sans-serif;
-            font-size: 26px;
+            font-size: 20px;
             color: $white;
             outline: none;
             transition: .5s;
@@ -156,17 +162,21 @@
             z-index: 1000;
 
             &::-webkit-scrollbar {
-                width: 5px; /* Ancho de la barra de desplazamiento */
+                width: 5px;
+                /* Ancho de la barra de desplazamiento */
             }
-        
+
             &::-webkit-scrollbar-track {
-                background-color: #060000e9; /* Color de fondo de la pista */
+                background-color: #060000e9;
+                /* Color de fondo de la pista */
                 border-radius: 8px;
             }
-        
+
             &::-webkit-scrollbar-thumb {
-                background-color: #920000; /* Color del mango de la barra de desplazamiento */
-                border-radius: 13px; /* Radio de borde del mango */
+                background-color: #920000;
+                /* Color del mango de la barra de desplazamiento */
+                border-radius: 13px;
+                /* Radio de borde del mango */
                 height: 13px;
             }
 

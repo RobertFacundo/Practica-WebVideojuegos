@@ -91,13 +91,17 @@ body::-webkit-scrollbar-thumb {
         color: #dbd2d2; }
   .nav .titulo-res {
     font-family: "Anta", sans-serif;
-    display: none;
-    color: #060000aa; }
+    font-size: 39px;
+    text-shadow: -4px -5px 4px rgba(0, 0, 0, 0.288);
+    color: #060000cb; }
+    .nav .titulo-res:hover {
+      color: #dbd2d2; }
   .nav .box {
     position: relative; }
     .nav .box .input {
       padding: 10px;
       margin-right: 10px;
+      padding-left: 18px;
       width: 310px;
       height: 65px;
       background: none;
@@ -105,7 +109,7 @@ body::-webkit-scrollbar-thumb {
       border-radius: 57px;
       box-sizing: border-box;
       font-family: "Anta", sans-serif;
-      font-size: 26px;
+      font-size: 20px;
       color: #dbd2d2;
       outline: none;
       transition: .5s; }
@@ -370,9 +374,9 @@ body::-webkit-scrollbar-thumb {
       font-size: 39px;
       text-decoration: none;
       padding: 13px;
-      color: #060000; }
+      color: #dbd2d2; }
       .vg-guia h1 a:hover {
-        color: #dbd2d2; }
+        color: #b21111f3; }
   .vg-guia .seccion-guia {
     display: flex;
     align-items: center;
@@ -393,15 +397,29 @@ body::-webkit-scrollbar-thumb {
       margin: 5px;
       width: 29vw;
       margin-right: 20px;
-      box-shadow: 0px 0px 13px 9px rgba(6, 0, 0, 0.55);
+      box-shadow: 0px 0px 9px 7px rgba(6, 0, 0, 0.55);
       transition: all 0.3s ease-in-out; }
       .vg-guia .seccion-guia .img-guia:hover {
+        transform: scale(1.03); }
+    .vg-guia .seccion-guia .img-guia2 {
+      margin: 5px;
+      width: 29vw;
+      margin-right: 20px;
+      box-shadow: 0px 0px 13px 9px #dbd2d2;
+      transition: all 0.3s ease-in-out; }
+      .vg-guia .seccion-guia .img-guia2:hover {
         transform: scale(1.03); }
     .vg-guia .seccion-guia .img {
       width: 43vw;
       box-shadow: 0px 0px 13px 9px rgba(6, 0, 0, 0.55);
       transition: all 0.3s ease-in-out; }
       .vg-guia .seccion-guia .img:hover {
+        transform: scale(1.03); }
+    .vg-guia .seccion-guia .img2 {
+      width: 43vw;
+      box-shadow: 0px 0px 13px 9px #dbd2d2;
+      transition: all 0.3s ease-in-out; }
+      .vg-guia .seccion-guia .img2:hover {
         transform: scale(1.03); }
   .vg-guia .enlaces {
     display: flex;
