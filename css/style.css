@@ -347,18 +347,39 @@ body::-webkit-scrollbar-thumb {
         transform: scale(1.03); }
     .vg-main .vg-description .enlaces {
       display: flex;
-      justify-content: space-around; }
-      .vg-main .vg-description .enlaces a {
-        justify-content: space-around;
-        padding-bottom: 23px;
-        font-family: "Anta", sans-serif;
-        font-size: 23px;
-        text-align: center;
+      justify-content: space-around;
+      padding-bottom: 30px; }
+      .vg-main .vg-description .enlaces .bn31 {
+        background-image: linear-gradient(39deg, #060000, #6b1f1ff3, #b21111f3, #060000f4);
+        border-radius: 40px;
+        box-sizing: border-box;
+        color: #060000;
+        display: block;
+        height: 70px;
+        font-size: 18px;
+        font-family: "Anta",sans-serif;
+        padding: 2px;
+        position: relative;
         text-decoration: none;
-        transition: all 0.3 ease-in-out; }
-        .vg-main .vg-description .enlaces a:hover {
-          transform: scale(1.03);
-          color: #dbd2d2; }
+        margin: 13px;
+        width: 300px;
+        z-index: 2; }
+        .vg-main .vg-description .enlaces .bn31:hover {
+          color: #dbd2d2;
+          border: 0.4px solid #060000; }
+        .vg-main .vg-description .enlaces .bn31 .bn31span {
+          align-items: center;
+          background: #32050553;
+          border-radius: 40px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          transition: background 0.5s ease;
+          width: 100%;
+          padding: 5px; }
+        .vg-main .vg-description .enlaces .bn31:hover .bn31span {
+          background: transparent; }
 
 .vg-guia {
   background-image: linear-gradient(39deg, #060000, #6b1f1ff3, #b21111f3, #060000f4);
@@ -388,7 +409,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     width: calc(100vw - 10%);
     margin-left: 5%;
-    margin-right: 5%; }
+    margin-right: 5%;
+    position: relative; }
     .vg-guia .seccion-guia .p-guia {
       font-family: "Anta", sans-serif;
       color: #dbd2d2;
@@ -438,18 +460,39 @@ body::-webkit-scrollbar-thumb {
         transform: scale(1.03); }
   .vg-guia .enlaces {
     display: flex;
-    justify-content: space-around; }
-    .vg-guia .enlaces a {
-      color: #b21111f3;
-      padding: 23px;
+    justify-content: space-around;
+    padding-bottom: 30px; }
+    .vg-guia .enlaces .bn31 {
+      background-image: linear-gradient(39deg, #060000, #6b1f1ff3, #b21111f3, #060000f4);
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #060000;
+      display: block;
+      height: 70px;
+      font-size: 18px;
       font-family: "Anta", sans-serif;
-      font-size: 19px;
-      text-align: center;
+      padding: 2px;
+      position: relative;
       text-decoration: none;
-      transition: all 0.3 ease-in-out; }
-      .vg-guia .enlaces a:hover {
-        transform: scale(1.03);
-        color: #dbd2d2; }
+      margin: 13px;
+      width: 300px;
+      z-index: 2; }
+      .vg-guia .enlaces .bn31:hover {
+        color: #dbd2d2;
+        border: 0.4px solid #060000; }
+      .vg-guia .enlaces .bn31 .bn31span {
+        align-items: center;
+        background: #32050553;
+        border-radius: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background 0.5s ease;
+        width: 100%;
+        padding: 5px; }
+      .vg-guia .enlaces .bn31:hover .bn31span {
+        background: transparent; }
 
 .footer {
   background-image: linear-gradient(to left, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
@@ -465,7 +508,7 @@ body::-webkit-scrollbar-thumb {
   .footer .p-footer {
     font-family: "Anta", sans-serif;
     font-size: 13px;
-    margin: 0;
+    margin-top: 0;
     top: -50%; }
     .footer .p-footer a {
       text-decoration: none;
