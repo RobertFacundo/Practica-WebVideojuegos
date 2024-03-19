@@ -377,6 +377,12 @@ body::-webkit-scrollbar-thumb {
       color: #dbd2d2; }
       .vg-guia h1 a:hover {
         color: #b21111f3; }
+  .vg-guia h2 {
+    padding-top: 80px;
+    font-family: "Anta", sans-serif;
+    color: #dbd2d2;
+    padding-left: 30px;
+    text-align: left; }
   .vg-guia .seccion-guia {
     display: flex;
     align-items: center;
@@ -393,6 +399,15 @@ body::-webkit-scrollbar-thumb {
       transition: all 0.3s ease-in-out; }
       .vg-guia .seccion-guia .p-guia:hover {
         transform: scale(1.01); }
+    .vg-guia .seccion-guia .ul-guia .lista-guia {
+      list-style-type: none;
+      font-family: "Anta", sans-serif;
+      color: #dbd2d2;
+      font-size: 20px;
+      padding: 18px;
+      text-align: auto;
+      text-indent: 5px;
+      transition: all 0.3s ease-in-out; }
     .vg-guia .seccion-guia .img-guia {
       margin: 5px;
       width: 29vw;

@@ -21,6 +21,13 @@
         color: $white;
         padding-left: 30px;
     }
+    h2{
+        padding-top: 80px;
+        font-family: $fuente-titulo;
+        color: $white;
+        padding-left: 30px;
+        text-align: left;
+    }
 
     .seccion-guia {
         display: flex;
@@ -43,6 +50,20 @@
             }
         }
 
+
+        .ul-guia {
+            .lista-guia {
+                list-style-type: none;
+                font-family: $fuente-titulo;
+                color: $white;
+                font-size: 20px;
+                padding: 18px;
+                text-align: auto;
+                text-indent: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
         .img-guia {
             margin: 5px;
             width: 29vw;
@@ -59,7 +80,7 @@
             margin: 5px;
             width: 29vw;
             margin-right: 20px;
-            box-shadow: 0px 0px 20px 3px  $white;
+            box-shadow: 0px 0px 20px 3px $white;
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -76,6 +97,7 @@
                 transform: scale(1.03);
             }
         }
+
         .img2 {
             width: 43vw;
             box-shadow: 0px 0px 13px 9px $white;
@@ -90,6 +112,7 @@
     .enlaces {
         display: flex;
         justify-content: space-around;
+
         a {
             color: #b21111f3;
             padding: 23px;
