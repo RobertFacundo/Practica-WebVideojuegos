@@ -167,6 +167,154 @@ body::-webkit-scrollbar-thumb {
           border-top: #060000 0.6px solid;
           border-bottom: #060000 0.6px solid; }
 
+.nav-guia {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  box-shadow: 0 8px 7px #ba0f0fa0;
+  position: relative;
+  top: 0;
+  width: 100%; }
+  .nav-guia ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block; }
+    .nav-guia ul::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 0;
+      background: #230606dd;
+      transition: height .8s; }
+    .nav-guia ul:hover::after {
+      height: 100%; }
+    .nav-guia ul li {
+      list-style-type: none; }
+      .nav-guia ul li .top {
+        font-family: "Anta", sans-serif;
+        font-size: 23px;
+        text-decoration: none;
+        color: #ba0f0fd5;
+        margin-left: 30px; }
+        .nav-guia ul li .top:hover {
+          color: #dbd2d2; }
+  .nav-guia .plataformas {
+    display: flex; }
+    .nav-guia .plataformas .consolas {
+      font-family: "Anta", sans-serif;
+      font-size: 30px;
+      display: flex;
+      text-decoration: none;
+      max-height: 50px;
+      margin-right: 50px;
+      padding: 5px 10px;
+      position: relative;
+      overflow: hidden;
+      display: inline-block; }
+      .nav-guia .plataformas .consolas::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 4px;
+        background: #230606f1;
+        transition: width .8s; }
+      .nav-guia .plataformas .consolas:hover::after {
+        width: 100%; }
+      .nav-guia .plataformas .consolas:hover {
+        color: #dbd2d2; }
+  .nav-guia .titulo-res {
+    font-family: "Anta", sans-serif;
+    font-size: 39px;
+    text-shadow: -4px -5px 4px rgba(0, 0, 0, 0.288);
+    color: #060000cb; }
+    .nav-guia .titulo-res:hover {
+      color: #dbd2d2; }
+  .nav-guia .box {
+    position: relative; }
+    .nav-guia .box .input {
+      padding: 10px;
+      margin-right: 10px;
+      padding-left: 18px;
+      width: 310px;
+      height: 65px;
+      background: none;
+      border: 3px solid #BD1E1E;
+      border-radius: 57px;
+      box-sizing: border-box;
+      font-family: "Anta", sans-serif;
+      font-size: 20px;
+      color: #dbd2d2;
+      outline: none;
+      transition: .5s; }
+      .nav-guia .box .input:hover {
+        border-radius: 10px; }
+    .nav-guia .box i {
+      position: absolute;
+      margin-right: 10px;
+      top: 50%;
+      right: 15px;
+      transform: translate(-50%, -50%);
+      font-size: 26px;
+      color: #BD1E1E;
+      transition: .2s; }
+      .nav-guia .box i:hover {
+        opacity: 0;
+        color: #bd1e1e7a; }
+    .nav-guia .box .dropdown {
+      display: flex;
+      flex-direction: row;
+      font-family: "Anta", sans-serif;
+      font-size: 16px;
+      position: absolute;
+      background-image: linear-gradient(39deg, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+      border: 1px solid #060000aa;
+      color: #060000aa;
+      border-radius: 5px;
+      box-shadow: 2px 6px 8px 12px rgba(18, 17, 17, 0.1);
+      min-height: 100px;
+      max-height: 300px;
+      width: 310px;
+      overflow-y: auto;
+      z-index: 1000; }
+      .nav-guia .box .dropdown::-webkit-scrollbar {
+        width: 5px;
+        /* Ancho de la barra de desplazamiento */ }
+      .nav-guia .box .dropdown::-webkit-scrollbar-track {
+        background-color: #060000e9;
+        /* Color de fondo de la pista */
+        border-radius: 8px; }
+      .nav-guia .box .dropdown::-webkit-scrollbar-thumb {
+        background-color: #920000;
+        /* Color del mango de la barra de desplazamiento */
+        border-radius: 13px;
+        /* Radio de borde del mango */
+        height: 13px; }
+      .nav-guia .box .dropdown-item {
+        padding: 8px 12px;
+        cursor: pointer;
+        color: #060000aa;
+        display: flex;
+        align-items: center; }
+        .nav-guia .box .dropdown-item:hover {
+          color: #dbd2d2;
+          border-top: #060000 0.6px solid;
+          border-bottom: #060000 0.6px solid; }
+
 @media screen and (max-width: 1149px) {
   .nav .menu {
     display: flex;
@@ -258,7 +406,8 @@ body::-webkit-scrollbar-thumb {
       text-decoration: none;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      max-height: 441px; }
       .main-index .mb-index a .mb-t {
         font-family: "Anta", sans-serif;
         font-size: 23px;

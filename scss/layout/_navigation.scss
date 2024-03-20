@@ -1,4 +1,4 @@
-.nav {
+.nav{
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(to right, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
@@ -7,6 +7,207 @@
     height: 75px;
     box-shadow: 0 8px 7px #ba0f0fa0;
     position: fixed;
+    top: 0;
+    width: 100%;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+        align-items: center;
+        padding: 20px;
+        margin: 10px;
+        position: relative; // se utiliza para establecer el contexto de posicionamiento para el seudoelemento ::after.
+        overflow: hidden; //  asegura que el subrayado no se desborde del elemento.
+        display: inline-block; //permite que el enlace tenga anchura y altura.
+
+        &::after {
+            content: ""; //establece el contenido del seudoelemento como vacío.
+            position: absolute; // posiciona el subrayado de forma absoluta dentro del enlace
+            top: 50%; //coloca el subrayado verticalmente en el centro del enlace
+            right: 0; //lo coloca en el borde derecho del enlace.
+            transform: translateY(-50%); // lo centra verticalmente.
+            width: 3px; //establece el ancho del subrayado
+            height: 0; // inicialmente establece la altura del subrayado como 0.
+            background: #230606dd;
+            transition: height .8s; // aplica una transición suave a la altura del subrayado
+        }
+
+        &:hover::after {
+            height: 100%; // hace que la altura del subrayado sea del 100% cuando se pasa el ratón sobre el enlace, lo que produce el efecto de transición hacia arriba y hacia abajo
+        }
+
+
+        li {
+            list-style-type: none;
+
+            .top {
+                font-family: "Anta", sans-serif;
+                font-size: 23px;
+                text-decoration: none;
+                color: #ba0f0fd5;
+                margin-left: 30px;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .plataformas {
+        display: flex;
+
+        .consolas {
+            font-family: "Anta", sans-serif;
+            font-size: 30px;
+            display: flex;
+            text-decoration: none;
+            max-height: 50px;
+            margin-right: 50px;
+            padding: 5px 10px;
+            // borde
+            position: relative; // se utiliza para establecer el contexto de posicionamiento para el seudoelemento ::after.
+            overflow: hidden; //  asegura que el subrayado no se desborde del elemento.
+            display: inline-block; //permite que el enlace tenga anchura y altura.
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%; // Posiciona el inicio del subrayado en el centro horizontal del enlace
+                transform: translateX(-50%); // Centra el subrayado horizontalmente
+                width: 0; // Inicialmente, el subrayado no tiene ancho
+                height: 4px;
+                background: #230606f1;
+                transition: width .8s; // Transición para el ancho del subrayado
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &:hover {
+                color: $white
+            }
+        }
+    }
+
+    .titulo-res {
+        font-family: "Anta", sans-serif;
+        font-size: 39px;
+        text-shadow: -4px -5px 4px rgba(0, 0, 0, 0.288);
+        color: #060000cb;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .box {
+        position: relative;
+
+        .input {
+            padding: 10px;
+            margin-right: 10px;
+            padding-left: 18px;
+            width: 310px;
+            height: 65px;
+            background: none;
+            border: 3px solid #BD1E1E;
+            border-radius: 57px;
+            box-sizing: border-box;
+            font-family: "Anta", sans-serif;
+            font-size: 20px;
+            color: $white;
+            outline: none;
+            transition: .5s;
+
+            &:hover {
+                border-radius: 10px;
+            }
+        }
+
+        i {
+            position: absolute;
+            margin-right: 10px;
+            top: 50%;
+            right: 15px;
+            transform: translate(-50%, -50%);
+            font-size: 26px;
+            color: #BD1E1E;
+            transition: .2s;
+
+            &:hover {
+                opacity: 0;
+                color: #bd1e1e7a;
+            }
+        }
+
+        .dropdown {
+            display: flex;
+            flex-direction: row;
+            font-family: $fuente-titulo;
+            font-size: 16px;
+            position: absolute;
+            background-image: linear-gradient(39deg, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+            border: 1px solid #060000aa;
+            color: #060000aa;
+            border-radius: 5px;
+            box-shadow: 2px 6px 8px 12px rgba(18, 17, 17, 0.1);
+            min-height: 100px;
+            max-height: 300px;
+            width: 310px;
+            overflow-y: auto;
+            z-index: 1000;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                /* Ancho de la barra de desplazamiento */
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #060000e9;
+                /* Color de fondo de la pista */
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #920000;
+                /* Color del mango de la barra de desplazamiento */
+                border-radius: 13px;
+                /* Radio de borde del mango */
+                height: 13px;
+            }
+
+            &-item {
+                padding: 8px 12px;
+                cursor: pointer;
+                color: #060000aa;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: $white;
+                    border-top: #060000 0.6px solid;
+                    border-bottom: #060000 0.6px solid;
+                }
+            }
+        }
+    }
+}
+
+// el mismo estilo para el navegador de los html de guia, pero sin que sea fixed en el top
+
+.nav-guia  {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #060000e9, #ad3434, #ba0f0ff1, #060000f4);
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    box-shadow: 0 8px 7px #ba0f0fa0;
+    position: relative;
     top: 0;
     width: 100%;
 
