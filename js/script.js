@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
             { titulo: "Grim Fandango (1998)", imagen: "../multimedia/Top/GrimFamdango.jpg", url: "../top/GrimFandango.html" },
             { titulo: "The Curse Of Monkey Island (1997)", imagen: "../multimedia/Top/MonkeyIsland.jpg", url: "../top/TheCurseOfMonkeyIsland.html" },
             { titulo: "Life Is Strange (2015)", imagen: "../multimedia/Top/Life_Is_Strange_cover_art.png", url: "../top/lifestrange.html" },
+            { titulo: "Commandos: Behind Enemy Lines (1997)", imagen: "../multimedia/Top/GrimFandango.jpg", url: "../top/Commandos.html" },
+            { titulo: "The Simpsons: Hit & Run (2003)", imagen: "../multimedia/Top/TheSimpsonsHitandRun.webp", url: "../top/TheSimpsons.html" },
+            { titulo: "Obscure (2004)", imagen: "../multimedia/Top/Obscure.webp", url: "../top/Obscure.html" },
+           
             // Agrega más juegos aquí según necesites
         ];
 
