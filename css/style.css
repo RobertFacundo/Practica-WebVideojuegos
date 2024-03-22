@@ -375,7 +375,7 @@ body::-webkit-scrollbar-thumb {
   .loop-slide .img-slide {
     display: flex;
     flex-direction: row;
-    animation: slide-to-left 79s linear infinite;
+    animation: slide-to-left 139s linear infinite;
     height: 70vh;
     width: 70vw;
     margin-top: 75px;
