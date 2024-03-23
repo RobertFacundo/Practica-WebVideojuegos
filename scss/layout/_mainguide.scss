@@ -10,9 +10,12 @@
             text-decoration: none;
             padding: 13px;
             color: $white;
+            display: inline-block;
+            transition: transform 0.8s;
 
             &:hover {
-                color: #b21111f3;
+                color: #060000;
+                transform: rotate(360deg);
             }
         }
 
@@ -147,7 +150,6 @@
 
             &:hover {
                 color: $white;
-                border: 0.4px solid #060000;
             }
 
             .bn31span {

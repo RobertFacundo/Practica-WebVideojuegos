@@ -545,8 +545,7 @@ body::-webkit-scrollbar-thumb {
         width: 300px;
         z-index: 2; }
         .vg-main .vg-description .enlaces .bn31:hover {
-          color: #dbd2d2;
-          border: 0.2px solid #060000; }
+          color: #dbd2d2; }
         .vg-main .vg-description .enlaces .bn31 .bn31span {
           align-items: center;
           background: #32050553;
@@ -575,9 +574,12 @@ body::-webkit-scrollbar-thumb {
       font-size: 39px;
       text-decoration: none;
       padding: 13px;
-      color: #dbd2d2; }
+      color: #dbd2d2;
+      display: inline-block;
+      transition: transform 0.8s; }
       .vg-guia h1 a:hover {
-        color: #b21111f3; }
+        color: #060000;
+        transform: rotate(360deg); }
   .vg-guia h2 {
     padding-top: 80px;
     font-family: "Anta", sans-serif;
@@ -669,8 +671,7 @@ body::-webkit-scrollbar-thumb {
       width: 300px;
       z-index: 2; }
       .vg-guia .enlaces .bn31:hover {
-        color: #dbd2d2;
-        border: 0.4px solid #060000; }
+        color: #dbd2d2; }
       .vg-guia .enlaces .bn31 .bn31span {
         align-items: center;
         background: #32050553;
