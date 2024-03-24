@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilo de w23 para el dropdown del nav -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- fa fa search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- script para el slider -->
+    <script src="../js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- barra de navegacion -->
+    <nav class="nav-guia" id="nav">
+        <ul>
+            <li>
+                <a class="top" href="../index.html">Te acordás del...</a>
+            </li>
+        </ul>
+        <h1 class="titulo-res">GUIAS Y TRUCOS</h1>
+        <div class="box">
+            <form name="search">
+                <input type="text" placeholder="Fijate si lo tengo..." class="input" name="txt"
+                    onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="fa fa-search"></i>
+            <div id="searchResults" class="dropdown" style="display: none;">
+                <div class="dropdown-item" id="LifeIsstrange">Life is strange</div>
+                <div class="dropdown-item" data-url="./juegos/age_of_empires_ii.html">Age of Empires II</div>
+            </div>
+        </div>
+    </nav>
+    <main class="vg-guia">
+        <h1><a href="./CallOfDuty.html">&larr;</a>Trucos para PC</h1>
+        <section class="seccion-guia">
+            <p class="p-guia">
+                Esta es una serie de armas en el juego. Cada arma puede ser reabastecida con munición completa abriendo
+                la consola de trucos en el juego y escribiendo "give ____" (sin comillas), donde la línea baja
+                corresponde a uno de los nombres de arma que se enumeran a continuación a la derecha.
+                <br>
+                <strong>BAR/30cal.</strong> - bar<br>
+                <strong>Bren LMG</strong> - bren<br>
+                <strong>Colt.45</strong> - colt<br>
+                <strong>FG42</strong> - fg42<br>
+                <strong>Kar98k</strong> - kar98k<br>
+                <strong>Lee-Enfield</strong> - enfield<br>
+                <strong>Luger</strong> - luger<br>
+                <strong>M1 Garand</strong> - m1garand<br>
+                <strong>M1A1 Carbine</strong> - m1carbine<br>
+                <strong>Mosin Nagant</strong> - mosin_nagant<br>
+                <strong>MP40</strong> - mp40<br>
+                <strong>MP44</strong> - mp44<br>
+                <strong>PPSh</strong> - ppsh<br>
+                <strong>Sniper Kar98k</strong> - kar98k_sniper<br>
+                <strong>Sniper Mosin-N</strong> - mosin_nagant_sniper<br>
+                <strong>Springfield</strong> - springfield<br>
+                <strong>Sten</strong> - sten<br>
+                <strong>Thompson SMG</strong> - thompson
+            </p>
+            <img class="img" src="../multimedia/Games/CallOfDuty/1.png" alt="">
+        </section>
+        <section class="seccion-guia">
+            <img class="img" src="../multimedia/Games/CallOfDuty/2.png" alt="">
+            <p class="p-guia">
+                Para ir a un nivel especifico aprieta tab y escribe los siguientes códigos <br>
+                <strong>Airfield:</strong> map airfield<br>
+                <strong>Berlin:</strong> map berlin<br>
+                <strong>Brecourt:</strong> map brecourt<br>
+                <strong>Burnville:</strong> map burnville<br>
+                <strong>Carride:</strong> map carried<br>
+                <strong>Chateau:</strong> map chateau<br>
+                <strong>Dam:</strong> map dam<br>
+                <strong>Dawnville:</strong> map dawnville<br>
+                <strong>Factory Map:</strong> map factory<br>
+                <strong>Hurtgen:</strong> map hurtgen<br>
+                <strong>Pathfinder:</strong> map pathfinder<br>
+                <strong>Pegasusday:</strong> map pegasusday<br>
+                <strong>Pegasusnight:</strong> map pegasusnight<br>
+                <strong>Powcamp:</strong> map powcamp<br>
+                <strong>Railyard:</strong> map railyard<br>
+                <strong>Redsquare:</strong> map redsquare<br>
+                <strong>Rocket:</strong> map rocket<br>
+                <strong>Sewer:</strong> map sewer<br>
+                <strong>Ship:</strong> map ship<br>
+                <strong>Stalingrad:</strong> map stalingrad<br>
+                <strong>Tank drive Country:</strong> map tankdrivecountry<br>
+                <strong>Tankdrivetown:</strong> map tankdrivetown<br>
+                <strong>Trainstation:</strong> map trainstation<br>
+                <strong>Training:</strong> map training<br>
+                <strong>Truckride:</strong> map truckride
+            </p>
+        </section>
+        <section class="seccion-guia">
+            <p class="p-guia">
+                Agrega esta cadena +set thereisacow 1337 +set developer 1 +set sv_cheats 1 +set monkeytoy 0 al final de
+                la línea de comando en el acceso directo al ejecutable del juego Call of Duty (cod.exe o algo así).
+                Presiona la tecla de tilde mientras juegas para abrir la consola de desarrollo y poder ingresar trucos.
+                <br>
+                <strong>god</strong> - Invincibility<br>
+                <strong>give all</strong> - Get all weapons, items, and ammo<br>
+                <strong>give ammo</strong> - Refill ammo for all weapons<br>
+                <strong>give health</strong> - Get full health<br>
+                <strong>noclip</strong> - Fly through walls<br>
+                <strong>notarget</strong> - Enemies ignore you <br>
+
+                Si el juego dice "sv_cheats son de solo lectura", ingresa setrandom sv_cheats 1 en la consola antes de
+                activar los códigos. Si el juego dice "los trucos no están habilitados en este servidor", ingresa
+                spdevmap (nombre del mapa) antes de activar los códigos.
+            </p>
+            <img class="img" src="../multimedia/Games/CallOfDuty/3.png" alt="">
+        </section>
+
+        <p class="enlaces">
+            <a href="./CallOfDutyTrucos.html">Trucos PC</a>
+        </p>
+
+    </main>
+    <footer class="footer">
+        <p class="p-footer">&copy; Todos los derechos reservados 2024 | Desarrollado por <a
+                href="https://www.linkedin.com/in/robertfacundofrontend/" target="_blank">Robert</a>
+        </p>
+    </footer>
+</body>
+
+</html>

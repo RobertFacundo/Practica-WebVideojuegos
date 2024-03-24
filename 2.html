@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilo de w23 para el dropdown del nav -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fa fa search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- script para el menu de busqueda -->
+    <script src="./js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- barra de navegacion -->
+    <nav class="nav" id="nav">
+        <ul>
+            <li>
+                <a class="top" href="./index.html">Te acordás del.. </a>
+            </li>
+        </ul>
+        <h1 class="titulo-res">GUIAS Y TRUCOS</h1>
+        <div class="box">
+            <form name="search">
+                <input type="text" placeholder="Fijate si lo tengo..." class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="fa fa-search"></i>
+            <div id="searchResults" class="dropdown" style="display: none;">
+                <div class="dropdown-item" id="LifeIsstrange">Life is strange</div>
+                <div class="dropdown-item" data-url="./juegos/age_of_empires_ii.html">Age of Empires II</div>
+            </div>
+        </div>
+    </nav>
+    <!-- header slider-->
+    <header class="loop-slide">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="img-slide">
+            <img src="./multimedia/slide/AgeOfEmpires2.webp" alt="imagen de juego age of empires">
+            <img src="./multimedia/slide/LifeIsStrange.webp" alt="Mujer mirando fotografias en una pared">
+            <img src="./multimedia/slide/TheLongestJourney.webp" alt="Un escenario del videojuego el viaje mas largo">
+            <img src="./multimedia/Games/GrimFandango/7.png" alt="dos personas bailando en un puente fantasioso">
+            <img src="./multimedia/slide/DevilMayCry.jpg"
+                alt="Dante de devil may cry matando demonios con una escopeta">
+            <img src="./multimedia/slide/Resident-evil.jpg"
+                alt="Leon de resident evil matando curas poseidos por el virus t">
+            <img src="./multimedia/Games/TheCurseOfMonkeyIsland/Guia/57.png"
+                alt="imagen de una orilla con un castillo destruido por cañoñes en el fondo">
+                <img src="./multimedia/slide/Obscure.jpg" alt="dos personas en un taxi">
+            <img src="./multimedia/slide/CallOfDuty.jpg" alt="una mira telescopica de un rifle">
+            <img src="./multimedia/slide/Silenthill2.jpg" alt="dos personas en un taxi">
+            <img src="./multimedia/Games/TheSimpsons-Hit&Run/6.png" alt="dos personas en un taxi">
+            <img src="./multimedia/Games/Commandos/7.png" alt="una mira telescopica de un rifle">
+        </div>
+    </header>
+    <main class="main-index">
+       <div class="main-juegos">
+         <section class="mb-index">
+             <a href="./top/CallOfDuty.html">
+                 <img class="mb-img" src="./multimedia/Top/Call_of_Duty_Cover.webp"
+                     alt="tapa del call of duty, juego de guerra">
+             </a href="">
+         </section>
+         <section class="mb-index">
+            <a href="./top/TheLongestJourney.html">
+                <img class="mb-img" src="./multimedia/Top/TheLongestJourney.jpg" alt="tapa del juego croc">
+            </a href="">
+        </section>
+    
+         <section class="mb-index">
+             <a href="./top/lifestrange.html">
+                 <img class="mb-img" src="./multimedia/Top/Life_Is_Strange_cover_art.png"
+                     alt="imagen de tapa del juego life is strange">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/ResidentEvil4.html">
+                 <img class="mb-img" src="./multimedia/Top/Resident-Evil-4.jpg" alt="tapa del juego resident evil 4">
+             </a href="">
+         </section>
+         <section class="mb-index">
+            <a href="./top/AgeOfEmpiresii.html">
+                <img class="mb-img" src="./multimedia/Top/AgeOfEmpires2.jpg" alt="screenshot del age of empire">
+            </a href="">
+        </section>
+         <section class="mb-index">
+             <a href="./top/DevilMayCry.html">
+                 <img class="mb-img" src="./multimedia/Top/DevilMayCry.webp" alt="tapa del videojuego devil may cry">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/TheCurseOfMonkeyIsland.html">
+                 <img class="mb-img" src="./multimedia/Top/MonkeyIsland.jpg" alt="tapa del crash">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/SilentHill.html">
+                 <img class="mb-img" src="./multimedia/Top/SilentHill2.jpg" alt="tapa del videojuego silent hill">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/Commandos.html">
+                 <img class="mb-img" src="./multimedia/Top/Commandos.jpg" alt="tapa del videojuego grim fandango">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/GrimFandango.html">
+                 <img class="mb-img" src="./multimedia/Top/GrimFandango.jpg" alt="tapa del videojuego grim fandango">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/TheSimpsons.html">
+                 <img class="mb-img" src="./multimedia/Top/TheSimpsonsHitandRun.webp" alt="tapa del videojuego grim fandango">
+             </a href="">
+         </section>
+         <section class="mb-index">
+             <a href="./top/Obscure.html">
+                 <img class="mb-img" src="./multimedia/Top/Obscure.webp" alt="tapa del videojuego grim fandango">
+             </a href="">
+         </section>
+       </div class="main-juegos">
+        <div class="pagination">
+            <a class="ra" href="./index.html">&larr;</a><p >2</p><a class="ra" href="../3.html">&rarr;</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="p-footer">&copy; Todos los derechos reservados 2024 | Desarrollado por <a
+                href="https://www.linkedin.com/in/robertfacundofrontend/" target="_blank">Robert</a></p>
+    </footer>
+</body>
+
+</html>
