@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { titulo: "Age of Empires II (1999)", imagen: "../multimedia/Top/AgeOfEmpires2.jpg", url: "../juegos/age_of_empires_ii.html" },
             { titulo: "Resident Evil 4 (2005)", imagen: "../multimedia/Top/Resident-Evil-4.jpg", url: "../top/ResidentEvil4.html" },
             { titulo: "Devil May Cry (2001)", imagen: "../multimedia/Top/DevilMayCry.webp", url: "../top/DevilMayCry.html" },
-            { titulo: "Croc: Legend of the Gobbos (1997)", imagen: "../multimedia/Top/Croc.jpg", url: "../top/Croc.html" },
+            { titulo: "The Longest Journey (1999)", imagen: "../multimedia/Top/TheLongestJourney.jpg", url: "../top/TheLongestJourney.html" },
             { titulo: "Silent Hill 2 (2001) ", imagen: "../multimedia/Top/SilentHill2.jpg", url: "../top/SilentHill.html" },
             { titulo: "Grim Fandango (1998)", imagen: "../multimedia/Top/GrimFamdango.jpg", url: "../top/GrimFandango.html" },
             { titulo: "The Curse Of Monkey Island (1997)", imagen: "../multimedia/Top/MonkeyIsland.jpg", url: "../top/TheCurseOfMonkeyIsland.html" },
